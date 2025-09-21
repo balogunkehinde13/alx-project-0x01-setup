@@ -4,11 +4,11 @@ import UserModal from "@/components/common/UserModal";
 import { UserData } from "@/interfaces";
 import Header from "@/components/layout/Header";
 
-interface UsersPageProps {
+interface UsersModalProps {
   posts: UserData[];
 }
 
-const Users: React.FC<UsersPageProps> = ({ posts }) => {
+const Users: React.FC<UsersModalProps> = ({ posts }) => {
   const [selectedUser, setSelectedUser] = useState<UserData | null>(null);
   const [isCreating, setIsCreating] = useState(false); // ✅ distinguish between add & edit mode
 

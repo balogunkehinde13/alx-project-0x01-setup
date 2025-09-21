@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import { UserData, UserCardProps } from "@/interfaces"; // adjust import path
+import { UserData, UserModalProps } from "@/interfaces"; // adjust import path
 
-interface UserModalProps extends UserCardProps {
+interface UserCardProps extends UserModalProps {
   user?: UserData; 
 }
 
-const UserModal: React.FC<UserModalProps> = ({ user, onClose, onSubmit }) => {
+const UserModal: React.FC<UserCardProps> = ({ user, onClose, onSubmit }) => {
   // Initialize form state
   const [formData, setFormData] = useState<UserData>(
     user || {

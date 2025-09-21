@@ -58,7 +58,7 @@ export interface UserData {
     company:  Company;
 }
 
-export interface UserCardProps {
+export interface UserModalProps {
     onClose: () => void;
     onSubmit: (user: UserData) => void;
 }
